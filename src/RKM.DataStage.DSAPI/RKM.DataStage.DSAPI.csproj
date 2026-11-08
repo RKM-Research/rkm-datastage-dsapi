@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFrameworks>net48;net10.0-windows</TargetFrameworks>
+		<RootNamespace>RKM.DataStage</RootNamespace>
+		<AssemblyName>RKM.DataStage.DSAPI</AssemblyName>
+		<ImplicitUsings>disable</ImplicitUsings>
+		<Nullable>disable</Nullable>
+		<PlatformTarget>x86</PlatformTarget>
+
+		<!-- NuGet package metadata; package is not published by Pack -->
+		<IsPackable>true</IsPackable>
+		<PackageId>RKM.DataStage.DSAPI</PackageId>
+		<Version>0.1.0-preview.1</Version>
+		<Authors>RKM Research Ltd</Authors>
+		<Company>RKM Research Ltd</Company>
+		<Copyright>Copyright © 2022-2026 Richard K. Morris / RKM Research Ltd</Copyright>
+		<Description>Low-level .NET wrapper for the 32-bit IBM DataStage DSAPI native library on Windows.</Description>
+		<PackageTags>datastage;dsapi;interop;x86;windows</PackageTags>
+		<PackageProjectUrl>https://rkmresearch.com</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/RKM-Research/rkm-datastage-dsapi</RepositoryUrl>
+		<RepositoryType>git</RepositoryType>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<PackageIcon>nuget-icon.png</PackageIcon>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<None Include="..\..\README.md" Pack="true" PackagePath="\" />
+		<None Include="..\..\assets\nuget-icon.png" Pack="true" PackagePath="\" />
+	</ItemGroup>
+
+</Project>
