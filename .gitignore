@@ -1,0 +1,37 @@
+# Build output (including the repository's centralised build directory)
+[Bb]in/
+[Oo]bj/
+[Bb]uild/
+[Dd]ebug/
+[Rr]elease/
+artifacts/
+
+# Visual Studio / IDE user-specific files
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.rsuser
+*.cachefile
+*.VC.db
+*.VC.opendb
+*.VC.VC.opendb
+_ReSharper*/
+*.DotSettings.user
+.idea/
+
+# Test and analysis results
+TestResults/
+coverage/
+*.coverage
+*.coveragexml
+coverage.cobertura.xml
+
+# Generated NuGet packages and temporary files
+*.nupkg
+*.snupkg
+*.nuget.g.props
+*.nuget.g.targets
+*.tmp
+*.bak
