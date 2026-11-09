@@ -43,6 +43,27 @@ jobs:
             if ($readme -notmatch 'A low-level C#/.NET wrapper') { throw "Unexpected NuGet README content" }
             if ($readme -match 'Internal development') { throw "Private development README included in public NuGet package" }
             if (-not $archive.GetEntry("nuget-icon.png")) { throw "NuGet package is missing its icon" }
+            # XML API documentation must accompany both supported frameworks
+            foreach ($tfmPattern in @('^lib/net48/', '^lib/net10\.0-windows[^/]*/')) {
+              $entries = @($archive.Entries | Where-Object {
+                $_.FullName -match $tfmPattern -and
+                $_.FullName -match '/RKM\.DataStage\.DSAPI\.xml
+          } finally {
+            $archive.Dispose()
+          }
+
+              })
+              if ($entries.Count -ne 1) {
+                throw "Expected one XML API documentation file for $tfmPattern, found $($entries.Count)"
+              }
+              $docReader = [System.IO.StreamReader]::new($entries[0].Open())
+              try { $xmlText = $docReader.ReadToEnd() } finally { $docReader.Dispose() }
+              [xml] $xmlDoc = $xmlText
+              $documented = @($xmlDoc.doc.members.member | Where-Object { $_.name -like '*DSOpenProject*' })
+              if ($documented.Count -eq 0) {
+                throw "XML API documentation lacks DSOpenProject in $($entries[0].FullName)"
+              }
+            }
           } finally {
             $archive.Dispose()
           }
