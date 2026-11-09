@@ -11,9 +11,13 @@ using System.Collections.Generic;
 namespace RKM.DataStage
 {
     /// <summary>
-    /// Represents a managed wrapper to IBM InfoSphere DataStage API.
-    /// This class cannot be inherited.
+    /// Provides managed access to the native IBM InfoSphere DataStage API (DSAPI).
     /// </summary>
+    /// <remarks>
+    /// Exposes low-level operations for connecting to DataStage and managing projects,
+    /// jobs, parameters, stages, links, and job logs.
+    /// Requires a compatible 32-bit IBM DataStage native runtime and a Windows x86 process.
+    /// </remarks>
     public static partial class DSAPI
     {
         #region APIs for Accessing projects
