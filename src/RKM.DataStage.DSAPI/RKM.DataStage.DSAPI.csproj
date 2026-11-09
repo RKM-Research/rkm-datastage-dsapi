@@ -7,6 +7,7 @@
 		<ImplicitUsings>disable</ImplicitUsings>
 		<Nullable>disable</Nullable>
 		<PlatformTarget>x86</PlatformTarget>
+		<GenerateDocumentationFile>true</GenerateDocumentationFile>
 
 		<!-- NuGet package metadata; package is not published by Pack -->
 		<IsPackable>true</IsPackable>
