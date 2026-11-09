@@ -42,6 +42,12 @@ Open `RKM.DataStage.DSAPI.slnx` in Visual Studio with the .NET 10 SDK and .NET F
 
 The project includes NuGet metadata for packaging the managed library. The icon file is expected at `assets/nuget-icon.png` when packing from source.
 
+## IBM DSAPI documentation
+
+The [IBM InfoSphere DataStage Development Kit documentation (11.7)](https://www.ibm.com/docs/en/iis/11.7.0?topic=interfaces-infosphere-datastage-development-kit) is the official IBM reference for the native DataStage API that this .NET wrapper exposes.
+
+This independent wrapper is maintained by RKM Research Ltd; IBM's documentation describes the underlying IBM interfaces, not this .NET package.
+
 ## Licence
 
 The managed wrapper is released under the [MIT License](LICENSE).
