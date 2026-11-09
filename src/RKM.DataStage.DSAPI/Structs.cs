@@ -764,6 +764,10 @@ namespace RKM.DataStage
         /// </summary>
         public struct DSPROJECT
         {
+            /// <summary>
+            /// Creates a project handle wrapper for an existing native DataStage project handle.
+            /// </summary>
+            /// <param name="projectHandle">The underlying native project handle.</param>
             public DSPROJECT(IntPtr projectHandle)
             {
                 this.pointer = projectHandle;
