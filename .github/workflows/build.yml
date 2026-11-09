@@ -1,0 +1,48 @@
+name: Build and pack DSAPI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  build-and-pack:
+    runs-on: windows-latest
+    permissions:
+      contents: read
+    steps:
+      - name: Check out source
+        uses: actions/checkout@v4
+
+      - name: Install .NET 10 SDK
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '10.0.x'
+
+      - name: Restore
+        run: dotnet restore RKM.DataStage.DSAPI.slnx
+
+      - name: Build both target frameworks
+        run: dotnet build RKM.DataStage.DSAPI.slnx --configuration Release --no-restore
+
+      - name: Pack without publishing
+        run: dotnet pack src/RKM.DataStage.DSAPI/RKM.DataStage.DSAPI.csproj --configuration Release --no-build --no-restore --output artifacts/packages
+
+      - name: Verify package README
+        shell: pwsh
+        run: |
+          $package = Get-ChildItem "artifacts/packages" -Filter "*.nupkg" | Select-Object -First 1
+          if (-not $package) { throw "No NuGet package was produced" }
+          Add-Type -AssemblyName System.IO.Compression
+          $archive = [System.IO.Compression.ZipFile]::OpenRead($package.FullName)
+          try {
+            $entry = $archive.GetEntry("README.md")
+            if (-not $entry) { throw "NuGet package is missing README.md" }
+            $reader = [System.IO.StreamReader]::new($entry.Open())
+            try { $readme = $reader.ReadToEnd() } finally { $reader.Dispose() }
+            if ($readme -notmatch 'A low-level C#/.NET wrapper') { throw "Unexpected NuGet README content" }
+            if ($readme -match 'Internal development') { throw "Private development README included in public NuGet package" }
+            if (-not $archive.GetEntry("nuget-icon.png")) { throw "NuGet package is missing its icon" }
+          } finally {
+            $archive.Dispose()
+          }
