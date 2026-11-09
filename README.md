@@ -28,6 +28,14 @@ NuGet package: [RKM.DataStage.DSAPI](https://www.nuget.org/packages/RKM.DataStag
 
 For .NET 10, ensure the consuming application runs as an **x86** process. A 64-bit application cannot load the 32-bit IBM DSAPI library.
 
+## Examples
+
+See the [RKM DataStage DSAPI examples repository](https://github.com/RKM-Research/rkm-datastage-dsapi-examples) for standalone C#/.NET applications that use the **published NuGet package** rather than a source-project reference.
+
+- [dsjob-net console example](https://github.com/RKM-Research/rkm-datastage-dsapi-examples/tree/main/low-level/console/dsjob-net) — demonstrates connecting to DataStage, discovering projects and jobs, inspecting metadata and logs, and running or stopping jobs. It includes JSON authentication-file support.
+
+The example targets .NET 10 on Windows x86 and requires a compatible IBM DataStage native runtime. Future examples will be maintained in the dedicated examples repository.
+
 ## Build
 
 Open `RKM.DataStage.DSAPI.slnx` in Visual Studio with the .NET 10 SDK and .NET Framework 4.8 targeting pack installed. Build the library for Windows x86.
