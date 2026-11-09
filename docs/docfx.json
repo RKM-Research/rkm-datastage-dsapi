@@ -27,7 +27,9 @@
       "_appTitle": "RKM.DataStage.DSAPI API Reference",
       "_appName": "RKM Research",
       "_appFooter": "RKM Research Ltd · Independent DataStage integration tools",
-      "_enableSearch": true
+      "_enableSearch": true,
+      "_appLogoPath": "images/rkm-logo.png",
+      "_appFaviconPath": "images/rkm-logo.png"
     },
     "template": [
       "default",
@@ -36,6 +38,13 @@
     "postProcessors": [
       "ExtractSearchIndex"
     ],
-    "output": "_site"
+    "output": "_site",
+    "resource": [
+      {
+        "files": [
+          "images/rkm-logo.png"
+        ]
+      }
+    ]
   }
 }
