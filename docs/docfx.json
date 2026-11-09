@@ -1,0 +1,41 @@
+{
+  "$schema": "https://raw.githubusercontent.com/dotnet/docfx/main/schemas/docfx.schema.json",
+  "metadata": [
+    {
+      "src": [
+        {
+          "src": "../",
+          "files": [
+            "build/bin/RKM.DataStage.DSAPI/Release/net10.0-windows/RKM.DataStage.DSAPI.dll"
+          ]
+        }
+      ],
+      "dest": "api"
+    }
+  ],
+  "build": {
+    "content": [
+      {
+        "files": [
+          "index.md",
+          "toc.yml",
+          "api/**/*.yml"
+        ]
+      }
+    ],
+    "globalMetadata": {
+      "_appTitle": "RKM.DataStage.DSAPI API Reference",
+      "_appName": "RKM Research",
+      "_appFooter": "RKM Research Ltd · Independent DataStage integration tools",
+      "_enableSearch": true
+    },
+    "template": [
+      "default",
+      "modern"
+    ],
+    "postProcessors": [
+      "ExtractSearchIndex"
+    ],
+    "output": "_site"
+  }
+}

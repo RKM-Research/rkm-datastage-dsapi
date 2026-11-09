@@ -35,3 +35,8 @@ coverage.cobertura.xml
 *.nuget.g.targets
 *.tmp
 *.bak
+
+# Generated DocFX site and metadata (source stays in docs/)
+/docs/api/
+/docs/_site/
+/docs/obj/
