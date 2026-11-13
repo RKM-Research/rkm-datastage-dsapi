@@ -19,7 +19,9 @@
         "files": [
           "index.md",
           "toc.yml",
-          "api/**/*.yml"
+          "api/**/*.yml",
+          "guides/**/*.md",
+          "guides/**/toc.yml"
         ]
       }
     ],

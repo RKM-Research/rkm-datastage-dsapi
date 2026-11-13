@@ -2,5 +2,8 @@
   href: https://rkmresearch.com/
 - name: Overview
   href: index.md
+- name: Guides and examples
+  href: guides/toc.yml
 - name: API Reference
   href: api/toc.yml
+
