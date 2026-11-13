@@ -1,0 +1,5 @@
+/* Keep external links readable without the DocFX external-link icon */
+a.external[href]::after {
+  content: none;
+  display: none;
+}

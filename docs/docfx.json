@@ -33,7 +33,8 @@
     },
     "template": [
       "default",
-      "modern"
+      "modern",
+      "templates/rkm"
     ],
     "postProcessors": [
       "ExtractSearchIndex"
