@@ -31,7 +31,8 @@
       "_appFooter": "<small>Published by <a href=\"https://rkmresearch.com/\">RKM Research Limited</a></small>",
       "_enableSearch": true,
       "_appLogoPath": "images/rkm-logo.png",
-      "_appFaviconPath": "images/rkm-logo.png"
+      "_appFaviconPath": "images/rkm-logo.png",
+      "_disableContribution": true
     },
     "template": [
       "default",
