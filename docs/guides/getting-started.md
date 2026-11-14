@@ -4,11 +4,47 @@
 
 Use this guide to make a first read-only connection with the low-level wrapper. The NuGet package is named `RKM.DataStage.DSAPI`; its namespace is `RKM.DataStage`, and its entry point is the static `DSAPI` class.
 
-## Prepare a console application
+## 1. Create a console project in Visual Studio
 
-In Visual Studio, create a C# console application targeting .NET 10 for Windows, install the `RKM.DataStage.DSAPI` NuGet package, and select **x86** as the platform target in the project build settings. The wrapper also targets .NET Framework 4.8.
+1. Select **Create a new project** and choose the **C# Console App** template.
+2. Give the project a name, such as `DsapiGettingStarted`, and select **.NET 10** as the framework.
+3. In **Solution Explorer**, right-click the project and select **Edit Project File**. Set the target framework to `net10.0-windows`, as shown below.
 
-Install a compatible licensed IBM 32-bit DataStage client runtime, including `vmdsapi.dll` and its dependencies. IBM software is supplied separately. An x64 process cannot load this native library. A missing dependency can cause a DLL-loading failure even when `vmdsapi.dll` itself is present.
+## 2. Install the NuGet package
+
+1. Right-click the project in **Solution Explorer** and select **Manage NuGet Packages**.
+2. Select **nuget.org** as the package source and open the **Browse** tab.
+3. Tick **Include prerelease**, because the wrapper is currently published as a preview.
+4. Search for **RKM.DataStage.DSAPI**, select the package, and click **Install**.
+5. Review the package details and any licence prompts. Check the **Installed** tab afterwards to confirm that the package was added.
+
+NuGet installs the managed wrapper. IBM's native DataStage client runtime is supplied separately.
+
+## 3. Set the application to 32-bit (x86)
+
+1. Right-click the project and select **Properties**.
+2. Under **Build**, find **Platform target** (the exact layout varies between Visual Studio versions) and select **x86**.
+3. Apply the setting to each configuration you will use, including **Debug** and **Release**.
+4. Edit the project file and check that these properties appear in an unconditional `PropertyGroup`:
+
+```xml
+<PropertyGroup>
+  <OutputType>Exe</OutputType>
+  <TargetFramework>net10.0-windows</TargetFramework>
+  <PlatformTarget>x86</PlatformTarget>
+  <RuntimeIdentifier>win-x86</RuntimeIdentifier>
+</PropertyGroup>
+```
+
+Keep the existing package reference and any other project settings. The runtime identifier selects a Windows x86 application host; changing only the solution platform or selecting **Prefer 32-bit** is not a substitute for an x86 process. Install the .NET 10 **x86** runtime on a machine where you run this framework-dependent application.
+
+The wrapper also supports .NET Framework 4.8, but this walkthrough uses .NET 10 for Windows.
+
+## 4. Prepare the IBM client runtime
+
+Install a compatible licensed IBM **32-bit** DataStage client runtime, including `vmdsapi.dll` and its dependencies. Follow IBM's client setup instructions so Windows can locate those DLLs. An x64 process cannot load this native library. A missing dependency can cause a DLL-loading failure even when `vmdsapi.dll` itself is present.
+
+Select **Build > Build Solution** to restore packages and compile the project. A successful build verifies compilation; connecting still requires the IBM runtime, an accessible DataStage environment and valid credentials.
 
 ## Connect, list jobs, and close the project
 
