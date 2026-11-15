@@ -242,7 +242,7 @@
 | --- | --- | --- |
 | 31100 | `UVE_CFNEA` | Clear file no exclusive access |
 
-### Errors for client library, taken from ICI
+### Client library errors
 
 | Code | Constant | Meaning |
 | --- | --- | --- |
