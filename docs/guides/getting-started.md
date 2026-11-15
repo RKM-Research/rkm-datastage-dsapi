@@ -45,6 +45,8 @@ IBM's native DSAPI library is 32-bit, so the **application process** must also b
 </PropertyGroup>
 ```
 
+Keep the existing package reference and any other project settings.
+
 `PlatformTarget` compiles the application for x86; `RuntimeIdentifier` selects a matching Windows x86 executable host. Install the **.NET 10 Runtime for Windows x86** when running a framework-dependent application. A 64-bit runtime alone cannot run it.
 
 For .NET Framework 4.8, select **x86** in the project's Build properties. Do not rely on **Any CPU** or **Prefer 32-bit** for this guide.
