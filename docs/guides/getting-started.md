@@ -46,6 +46,8 @@ Install a compatible licensed IBM **32-bit** DataStage client runtime, including
 
 Select **Build > Build Solution** to restore packages and compile the project. A successful build verifies compilation; connecting still requires the IBM runtime, an accessible DataStage environment and valid credentials.
 
+See [Redistributables and authentication requirements](redistributables.md) before deploying without a full IBM client installation, especially when using domain authentication and credential mapping.
+
 ## Connect, list jobs, and close the project
 
 This complete `Program.cs` reads connection values from environment variables. Set them in your local launch environment; do not place real credentials in source control or print passwords. These environment variables are an example convention, not a wrapper configuration feature.

@@ -8,3 +8,5 @@
   href: parameters.md
 - name: Error codes and troubleshooting
   href: error-codes.md
+- name: Redistributables and authentication
+  href: redistributables.md
