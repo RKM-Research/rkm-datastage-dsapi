@@ -251,7 +251,7 @@
 | 33212 | `UVE_BPID` | Bad partfile id |
 | 33213 | `UVE_BAK` | Bad AK file |
 
-### Error numbers generated explicitly by the interCALL server
+### Error numbers generated explicitly by the DSAPI server
 
 | Code | Constant | Meaning |
 | --- | --- | --- |
@@ -262,7 +262,7 @@
 | 39004 | `UVE_CLIENT_RESET` | internal - client RESET received OK |
 | 39005 | `UVE_INVALID_SRC` | @SYSTEM.RETURN.CODE non-numeric after EXECUTE |
 | 39006 | `UVE_TOOLONG_SRC` | @SYSTEM.RETURN.CODE has more than 2 fields |
-| 39007 | `UVE_KEY_NOT_IMP` | interCALL server key not implemented |
+| 39007 | `UVE_KEY_NOT_IMP` | DSAPI server key not implemented |
 | 39008 | `UVE_WRITE_FAILURE` | WRITE failed and taken ELSE clause |
 
 ### Errors for the Client/Server interface
