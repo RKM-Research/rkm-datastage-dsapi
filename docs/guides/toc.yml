@@ -6,3 +6,5 @@
   href: marshalling.md
 - name: Passing parameter values
   href: parameters.md
+- name: Error codes and troubleshooting
+  href: error-codes.md
