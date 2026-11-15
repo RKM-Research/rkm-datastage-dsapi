@@ -46,7 +46,8 @@ The project includes NuGet metadata for packaging the managed library. The icon 
 
 The [RKM.DataStage.DSAPI API reference](https://rkmresearch.com/docs/dsapi/) is generated from the library's C# XML documentation and provides browsable reference pages for public classes, methods, enumerations and structures.
 
-See [Error codes and troubleshooting](https://rkmresearch.com/docs/dsapi/guides/error-codes.html) for common DSAPI errors and lower-level UniVerse and RPC codes.
+- [Error codes and troubleshooting](https://rkmresearch.com/docs/dsapi/guides/error-codes.html) — common DSAPI errors and lower-level UniVerse and RPC codes
+- [Redistributables and authentication requirements](https://rkmresearch.com/docs/dsapi/guides/redistributables.html) — IBM runtime dependencies, direct engine logins, domain authentication and the embedded JVM
 
 ## IBM DSAPI documentation
 
