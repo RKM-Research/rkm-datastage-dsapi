@@ -17,7 +17,13 @@ The documentation is generated from the library's .NET 10 target. Both framework
 
 ## Getting started
 
-- [Connect and list jobs](guides/getting-started.md)
+Start with [Create a project, install the NuGet package and configure Windows x86](guides/getting-started.md). The opening guide walks through Visual Studio setup, the separately installed IBM client runtime and a check that your application runs as a 32-bit process.
+
+## Guides and examples
+
+Once setup is complete, work through these sections:
+
+- [Connect and list jobs](guides/getting-started.md#connect-list-jobs-and-close-the-project)
 - [Read job information](guides/reading-data.md)
 - [Marshal data and manage memory](guides/marshalling.md)
 - [Pass job parameter values](guides/parameters.md)
