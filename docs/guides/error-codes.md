@@ -135,7 +135,7 @@
 | -1010 | `DSJE_DOMAINLOGTOFAILED` | Failed to authenticate to Domain. |
 | -1011 | `DSJE_NOPRIVILEGE` | The ISF user does not have sufficient DataStage privileges. |
 
-## UniVerse and lower-level code reference
+## Lower-level code reference
 
 ### Numbers relating to the C library on the PC.
 
@@ -303,7 +303,7 @@
 | 39208 | `UVE_SR_REPLY_WRITE_FAIL` | Failed to write the reply to the slave (ic_inputreply) |
 | 39209 | `UVE_SR_SIZE_READ_FAIL` | Failed to read the size of the message from the slave |
 
-### UNIRPC Error codes
+### RPC Error codes
 
 | Code | Constant | Meaning |
 | --- | --- | --- |
