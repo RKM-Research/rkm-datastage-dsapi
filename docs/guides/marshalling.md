@@ -66,3 +66,7 @@ Here `logDetail` is a successfully retrieved `DSLOGDETAIL`. Do not apply the tim
 Related: [Utilities](../api/RKM.DataStage.DSAPI.Utilities.html), [Pass parameter values](parameters.md), [IBM Development Kit](https://www.ibm.com/docs/en/iis/11.7.0?topic=interfaces-infosphere-datastage-development-kit).
 
 Found a problem or have a suggestion? Contact [support@rkmresearch.com](mailto:support@rkmresearch.com).
+
+---
+
+IBM, DataStage and InfoSphere are trademarks or registered trademarks of International Business Machines Corporation in the United States, other countries, or both. RKM Research Ltd is independent of IBM; these tools and documents are not affiliated with, sponsored by or endorsed by IBM. Other product and company names belong to their respective trademark owners.

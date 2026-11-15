@@ -59,7 +59,7 @@ This independent wrapper is maintained by RKM Research Ltd; IBM's documentation 
 
 The managed wrapper is released under the [MIT License](LICENSE).
 
-IBM and DataStage are trademarks of their respective owners. This is an independent project and is not endorsed by IBM.
+IBM, DataStage and InfoSphere are trademarks or registered trademarks of International Business Machines Corporation in the United States, other countries, or both. This is an independent project and is not endorsed by IBM.
 
 ## Support
 

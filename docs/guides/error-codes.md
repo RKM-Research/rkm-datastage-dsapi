@@ -335,3 +335,7 @@
 | 81020 | `UVE_RPC_BAD_PIPE` | Invalid pipe handle |
 | 81021 | `UVE_RPC_PIPE_WRITE_ERROR` | Error writing to pipe |
 | 81022 | `UVE_RPC_PIPE_READ_ERROR` | Error reading from pipe |
+
+---
+
+IBM, DataStage and InfoSphere are trademarks or registered trademarks of International Business Machines Corporation in the United States, other countries, or both. RKM Research Ltd is independent of IBM; these tools and documents are not affiliated with, sponsored by or endorsed by IBM. Other product and company names belong to their respective trademark owners.

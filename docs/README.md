@@ -36,3 +36,7 @@ The generated reference is published at https://rkmresearch.com/docs/dsapi/.
 After documentation changes are merged, run **Publish DSAPI documentation to website** on `main` in the `RKM-Research/rkmresearch-website` repository. That workflow rebuilds from this repository's `main`, copies the complete generated site, and commits it as **Documentation improvements**. The website's existing Cloudflare Pages Git integration then deploys the update.
 
 Regenerate the complete site so guide pages, API links, navigation and search indexes stay together. Do not hand-edit generated HTML. This process does not publish a NuGet package.
+
+---
+
+IBM, DataStage and InfoSphere are trademarks or registered trademarks of International Business Machines Corporation in the United States, other countries, or both. RKM Research Ltd is independent of IBM; these tools and documents are not affiliated with, sponsored by or endorsed by IBM. Other product and company names belong to their respective trademark owners.

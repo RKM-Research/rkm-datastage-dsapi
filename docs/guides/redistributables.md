@@ -54,3 +54,7 @@ The presence of a bridging DLL does not itself provide the JVM or the Java class
 Establish which login mode the application requires before investigating missing libraries or authentication errors. A successful direct engine login does not verify that domain authentication or credential mapping is configured.
 
 See [Error codes and troubleshooting](error-codes.md) for DSAPI, UniVerse and RPC errors, and [Getting started](https://rkmresearch.com/docs/dsapi/guides/getting-started.html) for the wrapper's x86 setup.
+
+---
+
+IBM, DataStage and InfoSphere are trademarks or registered trademarks of International Business Machines Corporation in the United States, other countries, or both. RKM Research Ltd is independent of IBM; these tools and documents are not affiliated with, sponsored by or endorsed by IBM. Other product and company names belong to their respective trademark owners.

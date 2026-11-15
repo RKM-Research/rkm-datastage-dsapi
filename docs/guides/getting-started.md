@@ -145,3 +145,7 @@ For a larger console application, including JSON authentication-file handling, s
 For returned error codes and suggested checks, see [Error codes and troubleshooting](error-codes.md).
 
 Found a problem or have a suggestion? Contact [support@rkmresearch.com](mailto:support@rkmresearch.com).
+
+---
+
+IBM, DataStage and InfoSphere are trademarks or registered trademarks of International Business Machines Corporation in the United States, other countries, or both. RKM Research Ltd is independent of IBM; these tools and documents are not affiliated with, sponsored by or endorsed by IBM. Other product and company names belong to their respective trademark owners.

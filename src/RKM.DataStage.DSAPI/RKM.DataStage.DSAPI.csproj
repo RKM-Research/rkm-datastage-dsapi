@@ -16,7 +16,7 @@
 		<Authors>RKM Research Ltd</Authors>
 		<Company>RKM Research Ltd</Company>
 		<Copyright>Copyright © 2022-2026 Richard K. Morris / RKM Research Ltd</Copyright>
-		<Description>Low-level .NET wrapper for the 32-bit IBM DataStage DSAPI native library on Windows.</Description>
+		<Description>Low-level .NET wrapper for the 32-bit IBM DataStage DSAPI native library on Windows. IBM, DataStage and InfoSphere are trademarks or registered trademarks of International Business Machines Corporation in the United States, other countries, or both. RKM Research Ltd is independent of IBM; these tools and documents are not affiliated with, sponsored by or endorsed by IBM. Other product and company names belong to their respective trademark owners.</Description>
 		<PackageTags>datastage;dsapi;interop;x86;windows</PackageTags>
 		<PackageProjectUrl>https://rkmresearch.com</PackageProjectUrl>
 		<RepositoryUrl>https://github.com/RKM-Research/rkm-datastage-dsapi</RepositoryUrl>
