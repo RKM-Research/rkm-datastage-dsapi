@@ -21,11 +21,14 @@ The documentation is generated from the library's .NET 10 target. Both framework
 - [Read job information](guides/reading-data.md)
 - [Marshal data and manage memory](guides/marshalling.md)
 - [Pass job parameter values](guides/parameters.md)
-- [Redistributables and authentication requirements](guides/redistributables.md)
-- [Error codes and troubleshooting](guides/error-codes.md)
 - [Public DSAPI source and installation instructions](https://github.com/RKM-Research/rkm-datastage-dsapi)
 - [NuGet package](https://www.nuget.org/packages/RKM.DataStage.DSAPI/)
 - [Public examples](https://github.com/RKM-Research/rkm-datastage-dsapi-examples)
+
+## Runtime requirements and troubleshooting
+
+- [Error codes and troubleshooting](guides/error-codes.md) — common DSAPI errors and lower-level UniVerse and RPC codes
+- [Redistributables and authentication requirements](guides/redistributables.md) — IBM runtime dependencies, direct engine logins, domain authentication and the embedded JVM
 
 ## Underlying IBM API
 
