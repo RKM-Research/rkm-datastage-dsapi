@@ -61,4 +61,6 @@ For date and time strings use `DateTimeToParamShortDateString` and `DateTimeToPa
 
 Related: [DSPARAM](../api/RKM.DataStage.DSAPI.DSPARAM.html), [ParamType](../api/RKM.DataStage.DSAPI.ParamType.html), [Memory ownership](marshalling.md).
 
+For returned error codes and suggested checks, see [Error codes and troubleshooting](error-codes.md).
+
 Found a problem or have a suggestion? Contact [support@rkmresearch.com](mailto:support@rkmresearch.com).

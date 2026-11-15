@@ -782,6 +782,7 @@ namespace RKM.DataStage
         /// <summary>
         /// API error codes.
         /// </summary>
+        /// <seealso href="https://rkmresearch.com/docs/dsapi/guides/error-codes.html">Error codes and troubleshooting</seealso>
         public enum ErrorCodes
         {
             /// <summary>

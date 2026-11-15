@@ -21,6 +21,7 @@ The documentation is generated from the library's .NET 10 target. Both framework
 - [Read job information](guides/reading-data.md)
 - [Marshal data and manage memory](guides/marshalling.md)
 - [Pass job parameter values](guides/parameters.md)
+- [Error codes and troubleshooting](guides/error-codes.md)
 - [Public DSAPI source and installation instructions](https://github.com/RKM-Research/rkm-datastage-dsapi)
 - [NuGet package](https://www.nuget.org/packages/RKM.DataStage.DSAPI/)
 - [Public examples](https://github.com/RKM-Research/rkm-datastage-dsapi-examples)

@@ -46,6 +46,8 @@ The project includes NuGet metadata for packaging the managed library. The icon 
 
 The [RKM.DataStage.DSAPI API reference](https://rkmresearch.com/docs/dsapi/) is generated from the library's C# XML documentation and provides browsable reference pages for public classes, methods, enumerations and structures.
 
+See [Error codes and troubleshooting](https://rkmresearch.com/docs/dsapi/guides/error-codes.html) for common DSAPI errors and lower-level UniVerse and RPC codes.
+
 ## IBM DSAPI documentation
 
 The [IBM InfoSphere DataStage Development Kit documentation (11.7)](https://www.ibm.com/docs/en/iis/11.7.0?topic=interfaces-infosphere-datastage-development-kit) is the official IBM reference for the native DataStage API that this .NET wrapper exposes.

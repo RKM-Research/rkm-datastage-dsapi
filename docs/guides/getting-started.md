@@ -113,4 +113,6 @@ The wrapper documents one open project per process. Keep this first example sequ
 
 For a larger console application, including JSON authentication-file handling, see the [published examples repository](https://github.com/RKM-Research/rkm-datastage-dsapi-examples). The current wrapper exposes `DSSetServerParams`; the example application's authentication-file handling is separate from that API.
 
+For returned error codes and suggested checks, see [Error codes and troubleshooting](error-codes.md).
+
 Found a problem or have a suggestion? Contact [support@rkmresearch.com](mailto:support@rkmresearch.com).

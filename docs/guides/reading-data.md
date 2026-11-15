@@ -62,4 +62,6 @@ Information calls shown here return zero on success and an error code on failure
 
 Related: [DSJOBINFO](../api/RKM.DataStage.DSAPI.DSJOBINFO.html), [JobInfoType](../api/RKM.DataStage.DSAPI.JobInfoType.html), [Marshalling](marshalling.md).
 
+For returned error codes and suggested checks, see [Error codes and troubleshooting](error-codes.md).
+
 Found a problem or have a suggestion? Contact [support@rkmresearch.com](mailto:support@rkmresearch.com).
