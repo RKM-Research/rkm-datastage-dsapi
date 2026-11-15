@@ -31,8 +31,6 @@ DSAPI.DSSetServerParams("", engineUsername, enginePassword, engineServer);
 
 Here the variables contain the engine username, password and server name. This bypasses domain authentication and domain-to-engine credential mapping. Supplying a domain user's credentials does not make credential mapping available in this mode.
 
-IBM's [December 2011 support summary](https://www.ibm.com/support/pages/node/647267), under the DataStage API application topic, describes a failure without ASBNode and gives this empty-domain workaround. That note covers versions 8.0, 8.1 and 8.5; it is historical evidence for the distinction, not a current-version installation specification.
-
 ## Domain authentication and credential mapping
 
 For deployments using Information Server domain authentication and credential mapping, our deployment guidance is to install the complete matching ASBNode environment and IBM-supplied JDK/runtime through the appropriate IBM installation.
@@ -47,7 +45,7 @@ Successful domain authentication with `dsjob.exe` on either installed tier there
 
 ## CodeMesh and the embedded JVM
 
-The CodeMesh runtime dependency is evidence of a native-to-Java bridge. Our interpretation is that this authentication path needs a JVM loaded within the native application's process. IBM's historical support note reinforces this interpretation: its failure trace includes the JVM loader in `xmogrt` and Java-related code in `invocation_cpp`.
+The CodeMesh `xmogrt.dll` runtime provides the native-to-Java bridge used by this authentication path. It needs an embedded JVM within the native application's process to load and execute the dependent Java classes. The bridge DLL alone therefore does not supply the complete authentication runtime: the matching JVM, Java libraries and supporting configuration must also be available.
 
 The presence of a bridging DLL does not itself provide the JVM or the Java classes it needs. IBM's redistribution page does not describe how to provision that Java environment, and does not provide a minimal ASBNode/JDK redistribution recipe.
 
