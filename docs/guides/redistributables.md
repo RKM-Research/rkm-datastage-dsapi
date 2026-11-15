@@ -39,6 +39,12 @@ For deployments using Information Server domain authentication and credential ma
 
 Copying only the DLLs above is insufficient for this login path. A standalone JDK installation is not a substitute for ASBNode's Java libraries and configuration. Use the IBM runtime supplied for the applicable DataStage version.
 
+### Why the installed dsjob.exe works
+
+IBM's `dsjob.exe` is installed on both the client tier and the engine tier. Both installations include ASBNode, so the installed executable has access to the supporting authentication environment.
+
+Successful domain authentication with `dsjob.exe` on either installed tier therefore does not demonstrate that the executable and the listed redistributable DLLs form a self-contained deployment. Copying those files to a machine without ASBNode does not reproduce the installed environment needed for domain authentication and credential mapping.
+
 ## CodeMesh and the embedded JVM
 
 The CodeMesh runtime dependency is evidence of a native-to-Java bridge. Our interpretation is that this authentication path needs a JVM loaded within the native application's process. IBM's historical support note reinforces this interpretation: its failure trace includes the JVM loader in `xmogrt` and Java-related code in `invocation_cpp`.
