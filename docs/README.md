@@ -29,6 +29,10 @@ The `Build DSAPI API documentation` GitHub Actions workflow generates and valida
 
 This workflow **does not publish** the site, modify the RKM Research website, or push any package to NuGet.org.
 
-## Future website integration
+## Website publishing
 
-After content review, publish the generated `docs/_site/` **contents** under a static web path such as `https://rkmresearch.com/docs/dsapi/`. Keep the public site deployment separate from this build until explicitly approved.
+The generated reference is published at https://rkmresearch.com/docs/dsapi/.
+
+After documentation changes are merged, run **Publish DSAPI documentation to website** on `main` in the `RKM-Research/rkmresearch-website` repository. That workflow rebuilds from this repository's `main`, copies the complete generated site, and commits it as **Documentation improvements**. The website's existing Cloudflare Pages Git integration then deploys the update.
+
+Regenerate the complete site so guide pages, API links, navigation and search indexes stay together. Do not hand-edit generated HTML. This process does not publish a NuGet package.
