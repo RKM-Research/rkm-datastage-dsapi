@@ -57,6 +57,8 @@ Install a compatible, licensed IBM **32-bit DataStage client runtime**, includin
 
 Have your DataStage domain, server, project name and connection credentials ready.
 
+See [Redistributables and authentication requirements](redistributables.md) before deploying without a full IBM client installation, especially when using domain authentication and credential mapping.
+
 ## 5. Check the process before connecting
 
 Temporarily replace `Program.cs` with:
@@ -137,5 +139,7 @@ The wrapper documents one open project per process. Keep this first example sequ
 - [Browse the DSAPI class](../api/RKM.DataStage.DSAPI.html)
 
 For a larger console application, including JSON authentication-file handling, see the [published examples repository](https://github.com/RKM-Research/rkm-datastage-dsapi-examples). The current wrapper exposes `DSSetServerParams`; the example application's authentication-file handling is separate from that API.
+
+For returned error codes and suggested checks, see [Error codes and troubleshooting](error-codes.md).
 
 Found a problem or have a suggestion? Contact [support@rkmresearch.com](mailto:support@rkmresearch.com).

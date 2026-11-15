@@ -2,7 +2,7 @@
 
 > **Validation status:** Examples are awaiting validation against a DataStage environment.
 
-**RKM.DataStage.DSAPI** is a low-level C#/.NET wrapper for IBM InfoSphere DataStage's native DSAPI.
+**RKM.DataStage.DSAPI** is a low-level C#/.NET wrapper for the native DSAPI used by IBM InfoSphere DataStage (DataStage Classic).
 
 This reference is generated from the public .NET library and its XML documentation comments. Use the **API Reference** navigation to browse the `RKM.DataStage` namespace and the `DSAPI` class, methods, enumerations and data structures.
 
@@ -27,6 +27,7 @@ Once setup is complete, work through these sections:
 - [Read job information](guides/reading-data.md)
 - [Marshal data and manage memory](guides/marshalling.md)
 - [Pass job parameter values](guides/parameters.md)
+- [Error codes and troubleshooting](guides/error-codes.md)
 - [Public DSAPI source and installation instructions](https://github.com/RKM-Research/rkm-datastage-dsapi)
 - [NuGet package](https://www.nuget.org/packages/RKM.DataStage.DSAPI/)
 - [Public examples](https://github.com/RKM-Research/rkm-datastage-dsapi-examples)
